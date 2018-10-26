@@ -7,8 +7,9 @@ if len(sys.argv) != 3:
       sys.exit(1)
 
 encoded = sys.argv[1]
+dictionary_list = sys.argv[2]
 
-with open('rockyou.txt', 'r') as dic:
+with open(dictionary_list, 'r') as dic:
    for secret in dic:
       try:
          jwt.decode(encoded, secret, algorithms=['HS256'])

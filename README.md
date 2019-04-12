@@ -2,5 +2,5 @@
 
 Usage:
 ```
-python jwtcrack.py encoded_jwt dictionary_list
+python jwtcrack.py encoded_jwt wordlist
 ```
